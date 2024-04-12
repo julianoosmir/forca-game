@@ -1,1 +1,40 @@
 /* You can add global styles to this file, and also import other style files */
+@import "primeng/resources/themes/lara-light-blue/theme.css";
+@import "primeng/resources/primeng.css";
+@import "primeicons/primeicons.css";
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+
+
+@media (max-width: 600px) {
+  .panel {
+    width: 80%;
+  }
+}
+
+@media (max-height: 600px) {
+  .panel {
+    height: 80%;
+  }
+}
+
+@keyframes hoverAnimate {
+  to {
+    transition: all 0.8s ease;
+    letter-spacing: 2px;
+    background-color: #353b48;
+  }
+
+  100% {
+    letter-spacing: 2px;
+  }
+}

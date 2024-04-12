@@ -1,0 +1,23 @@
+
+<app-menu></app-menu>
+<div id="wapper">
+  <div class="panel">
+    <h2> Cadastro <span> Usuario</span></h2>
+    <br/>
+    <form action="#">
+      <div>
+        <label for="dica">dica : </label>
+        <br/>
+        <input type="name" class="form-control" name="dica" [(ngModel)]="dica" placeholder="Enter dica">
+      </div>
+      <br/>
+      <div>
+        <label for="dica">palavra : </label>
+        <br/>
+        <input type="palavra" class="form-control" name="palavra" id="palavra" [(ngModel)]="palavra" aria-describedby="emailHelp" placeholder="Enter palavra">
+      </div>
+      <br/>
+      <button type="submit" (click)="salvar()" class="button"> Salvar </button>
+    </form>
+  </div>
+</div>

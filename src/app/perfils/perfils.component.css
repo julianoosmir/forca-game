@@ -1,0 +1,36 @@
+
+div#wapper {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+div#wapper div.panel   {
+  padding: 5pc 3pc 0pc 3pc;
+  background-color: #fff;
+  width: 50vw;
+  height: 80vh;
+  box-shadow: 1px 6px 8px 2px rgba(0, 0, 0, 0.42);
+}
+.list-group span{
+  display: flex;
+}
+
+.span-input input{
+
+  max-height: 100%;
+
+}
+
+.btn-text-right{
+  margin-left: 80%;
+	text-align: right;
+  margin-bottom: 20px;;
+}
+.btn-text-center{
+
+	text-align: center;
+}

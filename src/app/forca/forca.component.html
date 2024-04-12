@@ -1,0 +1,26 @@
+<app-menu></app-menu>
+<div id="wapper">
+  <div class="panel">
+
+    <div class="bs-example btn-text-right" *ngIf="role === 'ADMIN'" >
+      <button type="button" class="btn btn-primary float-right" [routerLink]="['/cadastro-forca']"><span
+          class="pi pi-plus"></span></button>
+    </div>
+
+    <div class="list-group">
+      <span *ngFor="let forca of forcas">
+        <a class="list-group-item list-group-item-action" [routerLink]="['/jogo-forca']" [state]="{forca:forca}">
+          DICA : {{forca.dica}}
+
+        </a>
+        <button mat-fab color="primary" *ngIf="role === 'ADMIN'" (click)="deletar(forca.id)" class="btn btn-danger" aria-label="Example icon button with a delete icon">
+          <mat-icon>delete</mat-icon>
+        </button>
+        <button class="btn btn-success" *ngIf="role === 'ADMIN'">
+          <i class="pi pi-pencil"  [routerLink]="['/cadastro-forca']" [state]="{forca:forca}"></i>
+        </button>
+      </span>
+
+    </div>
+  </div>
+</div>

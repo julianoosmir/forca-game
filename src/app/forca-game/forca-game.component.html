@@ -1,0 +1,53 @@
+<app-menu></app-menu>
+<div id="wapper">
+  <div class="panel-auth">
+    <div class="container">
+      <div id="imagem">
+        <img [src]="imagem" alt="">
+      </div>
+      <br/>
+      <div id="palavra-secreta">
+        <p class="letras" *ngFor="let letra of letrasOculta">{{letra}}</p>
+      </div>
+    </div>
+    <div id="palavra-secreta">
+      <p class="categoria">dica: {{dica}}</p>
+    </div>
+
+    <div id="teclado">
+      <div class="teclas">
+        <button id="tecla-A" #LetraA (click)="verificaLetraEscolhida(LetraA)">A</button>
+        <button id="tecla-B" #LetraB (click)="verificaLetraEscolhida(LetraB)">B</button>
+        <button id="tecla-C" #LetraC (click)="verificaLetraEscolhida(LetraC)">C</button>
+        <button id="tecla-D" #LetraD (click)="verificaLetraEscolhida(LetraD)">D</button>
+        <button id="tecla-E" #LetraE (click)="verificaLetraEscolhida(LetraE)">E</button>
+        <button id="tecla-F" #LetraF (click)="verificaLetraEscolhida(LetraF)">F</button>
+        <button id="tecla-G" #LetraG (click)="verificaLetraEscolhida(LetraG)">G</button>
+        <button id="tecla-H" #LetraH (click)="verificaLetraEscolhida(LetraH)">H</button>
+        <button id="tecla-I" #LetraI (click)="verificaLetraEscolhida(LetraI)">I</button>
+      <!-- </div>
+      <div class="teclas"> -->
+        <button id="tecla-J" #LetraJ (click)="verificaLetraEscolhida(LetraJ)">J</button>
+        <button id="tecla-K" #LetraK (click)="verificaLetraEscolhida(LetraK)">K</button>
+        <button id="tecla-L" #LetraL (click)="verificaLetraEscolhida(LetraL)">L</button>
+        <button id="tecla-M" #LetraM (click)="verificaLetraEscolhida(LetraM )">M</button>
+        <button id="tecla-N" #LetraN (click)="verificaLetraEscolhida(LetraN)">N</button>
+        <button id="tecla-O" #LetraO (click)="verificaLetraEscolhida(LetraO)">O</button>
+        <button id="tecla-P" #LetraP (click)="verificaLetraEscolhida(LetraP)">P</button>
+        <button id="tecla-Q" #LetraQ (click)="verificaLetraEscolhida(LetraQ )">Q</button>
+        <button id="tecla-R" #LetraR (click)="verificaLetraEscolhida(LetraR)">R</button>
+      <!-- </div>
+      <div class="teclas"> -->
+        <button id="tecla-S" #LetraS (click)="verificaLetraEscolhida(LetraS)">S</button>
+        <button id="tecla-T" #LetraT (click)="verificaLetraEscolhida(LetraT)">T</button>
+        <button id="tecla-U" #LetraU (click)="verificaLetraEscolhida(LetraU)">U</button>
+        <button id="tecla-V" #LetraV (click)="verificaLetraEscolhida(LetraV)">V</button>
+        <button id="tecla-W" #LetraW (click)="verificaLetraEscolhida(LetraW)">W</button>
+        <button id="tecla-X" #LetraX (click)="verificaLetraEscolhida(LetraX)">X</button>
+        <button id="tecla-Y" #LetraY (click)="verificaLetraEscolhida(LetraY)">Y</button>
+        <button id="tecla-Z" #LetraZ (click)="verificaLetraEscolhida(LetraZ)">Z</button>
+        <button id="tecla-Z" #LetraClha (click)="verificaLetraEscolhida(LetraClha)">Ç</button>
+      </div>
+    </div>
+  </div>
+</div>
